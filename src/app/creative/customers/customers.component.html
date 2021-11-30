@@ -1,0 +1,15 @@
+<section class="customer-section">
+    <h1 class="customer-title">customers</h1>
+    <div class="customer-wraper">
+        <div class="customer-card" *ngFor="let customer of customers">
+            <i class="fas fa-quote-left"></i>
+            <p class="customer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit voluptates ut
+                dolor quibusdam in optio, corporis vero deleniti dignissimos.</p>
+            <div class="customer-rating" >
+                <i class={{rating}} *ngFor="let rating of customer.stars"></i>
+            </div>
+            <img class="customer-img" src={{customer.path}} alt={{customer.name}}>
+            <h4 class="customer-name">{{customer.name}}</h4>
+        </div>
+    </div>
+</section>

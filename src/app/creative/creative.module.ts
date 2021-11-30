@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeadersComponent } from './headers/headers.component';
+import { CustomersComponent } from './customers/customers.component';
 
 
 
 @NgModule({
   declarations: [
-    HeadersComponent
+    HeadersComponent,
+    CustomersComponent
   ],
   exports:[
-    HeadersComponent
+    HeadersComponent,
+    CustomersComponent
   ],
   imports: [
     CommonModule
