@@ -1,0 +1,27 @@
+<section class="teams">
+    <h1 class="teams-title">Team</h1>
+    <div class="team-wraper">
+        <div class="team-card" *ngFor="let members of teamMembers">
+            <img class="team-img" src={{members.imgPath}} alt="">
+            <h3 class="team-name">{{members.name}}
+                <span>({{members.title}})</span>
+            </h3>
+            <ul class="team-skills">
+                <li *ngFor="let skill of members.skills">{{skill}}</li>
+            </ul>
+            <a href="#" class="project-btn">projects</a>
+            <div (click)="showHistory(members.name)" [ngClass]="!members.activate?'story-btn':'story-btn change'"
+                title="My-strory">
+                <div class="story-btn-line"></div>
+            </div>
+            <div [ngClass]="!members.activate?'story':'story change'">
+                <h4 class="story-heading"></h4>
+                <p class="story-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium rem ipsa tempora earum
+                    reiciendis quasi odit optio possimus, cupiditate, nostrum animi minima consectetur officia vel
+                    distinctio accusamus quis debitis id?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
