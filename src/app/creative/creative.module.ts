@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeadersComponent } from './headers/headers.component';
 import { CustomersComponent } from './customers/customers.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -10,12 +11,14 @@ import { TeamMembersComponent } from './team-members/team-members.component';
   declarations: [
     HeadersComponent,
     CustomersComponent,
-    TeamMembersComponent
+    TeamMembersComponent,
+    FooterComponent
   ],
   exports:[
     HeadersComponent,
     CustomersComponent,
-    TeamMembersComponent
+    TeamMembersComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule
